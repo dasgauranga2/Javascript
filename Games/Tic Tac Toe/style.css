@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: rgb(156, 155, 155);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.status-action {
+    display: flex;
+    margin-top: 25px;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.reset {
+    cursor: pointer;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    background-color: gray;
+}
+
+.game-cell {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x::after {
+    content: '×';
+    font-size: 100px;
+}
+
+.o::after {
+    content: '○';
+    font-size: 100px;
+}
